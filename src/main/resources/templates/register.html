@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	  th:fragment="Layout(content)">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop management system</title>
+<!--   -->
+<!--    <link rel="stylesheet" th:href="@{../css/Landing_Page.css}">-->
+<!--    <link rel="stylesheet" th:href="@{../css/Sign-in-style.css}">-->
+    <link rel="stylesheet" th:href="@{../css/register.css}">
+    <link rel="stylesheet" th:href="@{../css/register.component.css}">
+</head>
+
+<body>
+<div class="container">
+
+    <div class="main">
+
+        <div class="right">
+            <div class="circle">
+
+            </div>
+            <p class="pOne">Register to continue!!</p>
+
+            <form th:action="@{/registration}" method="post" role="form" th:object="${user}" name="SignUp-form"  id="signup-form" class="formStyle">
+
+                <input th:field="*{fullname}" type="text" name="username" placeholder="Full name" required autofocus="autofocus" class="name">
+                <input th:field="*{email}" type="email" name="email" placeholder="Email" required autofocus="autofocus" class="style">
+                <input th:field="*{password}" type="password" name="password"  placeholder=" Password" required autofocus="autofocus" class="styleOne">
+                <input th:field="*{role}" type="hidden" name="role" th:value="USER">
+
+                <button class="butStyle" type="submit" >Sign-up</button>
+
+                <p class="myspan">Already registered ?  <a th:href="@{/login}"><span style="cursor: pointer;"> Sign in </span></a></p>
+            </form>
+        </div>
+        <div class="left">
+            <img th:src="@{../images/Africa.jpg}" alt="Description of the my image" class="myImg" >
+        </div>
+    </div>
+</div>
+  
+</body>
+
+</html>
+

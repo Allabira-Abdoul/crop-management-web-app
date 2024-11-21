@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+	  th:fragment="Layout(content)">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop management system</title>
+   
+<!--    <link rel="stylesheet" th:href="@{../css/Landing_Page.css}">-->
+<!--    <link rel="stylesheet" th:href="@{../css/Sign-in-style.css}">-->
+    <link rel="stylesheet" th:href="@{../css/login.css}">
+
+</head>
+
+<body>
+<div class="container">
+
+    <div class="main">
+        <div class="left">
+            <img th:src="@{../images/Africa.jpg}" alt="Description of the my image" class="myImg" >
+        </div>
+        <div class="right">
+            <div class="circle">
+
+            </div>
+            <p class="pOne">Welcome Back !!!</p>
+            <div class="pOne" th:if="${param.error}">
+                Invalid Username or Password
+            </div>
+            <div class="pOne" th:if="${param.logout}">
+                Logout Successfuly
+            </div>
+
+            <form th:action="@{/login}" method="post" name="SignIn-form" class="formStyle">
+
+                <input type="email" id="username" name="username" placeholder="Email"  class="style" required>
+                <input type="password" id="password" name="password"  placeholder=" Password"  class="styleOne" required>
+
+                <a th:href="@{/home}"> <button class="butStyle" type="submit">Login</button></a>
+
+                <p class="myspan">Don't have an account ?  <a th:href="@{/registration}"><span  style="cursor: pointer;">Sign up</span></a></p>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>
+
+

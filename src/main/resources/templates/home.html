@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:fragment="Layout(content)">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm management system</title>
+
+    <link rel="stylesheet" th:href="@{../css/home.css}">
+
+</head>
+<body>
+<p>Home page reached!!</p>
+<p>Welcome back, [[${user.getFullname()}]]</p>
+<a th:href="@{/logout}">Logout</a>
+</body>
+</html>

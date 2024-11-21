@@ -1,0 +1,180 @@
+*{
+
+    margin: 0%;
+    padding: 0%;
+
+
+
+
+}
+.container{
+    margin-top: 100px;
+
+
+}
+
+.main{
+
+    margin: auto;
+    width: 1050px;
+    height: 500px;
+
+    background-color: white;
+    display: flex;
+
+
+}
+.left{
+    height: 100%;
+    width: 50%;
+    background-color: #096A67;
+
+    background-image: url(../../../../public/images/twightImage.png);
+    background-position: contain;
+    background-size: contain;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.right{
+    width: 50%;
+    height: 100%;
+    background-color: red;
+    background-color: #F5F6F1;
+    margin: auto;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.circle{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    background-color: #096a6723;
+    margin-left: 46%;
+    margin-top: 5%;
+    background-image: url(../../../../public/images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: 72%;
+    background-position: center;
+}
+.pOne{
+
+    margin-left: 33%;
+    margin-top: 2%;
+    font-size: 1.2em;
+    font-weight: bold;
+    font-family: Poppins;
+}
+.formStyle{
+    display: flex;
+    flex-direction: column;
+    position: center;
+    margin-top: 10px;
+    border: none;
+    margin: auto;
+}
+
+.style{
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 150px;
+    height: 42px;
+    background-color: #e4e4e4;
+    background-color: #096a6723;
+
+    border: none;
+    background-image: url(../../../../public/images/mail.png);
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+    background-size: 25px;
+    padding: 8px 10px 6px 45px;
+    box-sizing: border-box;
+
+
+
+}
+
+.name{
+    width: 250px;
+    margin-top: 15px;
+    margin-left: 150px;
+    height: 42px;
+    background-color: #e4e4e4;
+    background-color: #096a6723;
+
+    border: none;
+    background-image: url(../../../../public/images/name.png);
+    background-repeat: no-repeat;
+    background-position: 10px 8px;
+    background-size: 25px;
+    padding: 8px 10px 6px 45px;
+    box-sizing: border-box;
+
+
+
+}
+
+.styleOne{
+    width: 250px;
+    margin-top: 25px;
+    margin-left: 150px;
+    height: 42px;
+
+    background-color: #096a6723;
+    border: none;
+    background-image: url(../../../../public/images/lock.png);
+    background-repeat: no-repeat;
+    background-position: 5px 4px;
+    background-size: 29px;
+    padding: 8px 10px 6px 40px;
+    box-sizing: border-box;
+
+
+}
+
+.styleOne:focus, .style:focus{
+    outline: none;
+    border: 2px solid #096a67bf;
+}
+.name:focus, .name:focus{
+    outline: none;
+    border: 2px solid #096a67bf;
+}
+
+.butStyle{
+
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 50px;
+    width: 250px;
+    height: 40px;
+    margin-left: 150px;
+    border: none;
+    border-radius: 3px;
+    background-color: #096A67;
+
+    color: white;
+    font-family: Poppins;
+
+}
+.myspan{
+    margin-left: 170px;
+    margin-top: 10px;
+    font-weight: 525;
+    font-family: Poppins;
+    font-size: small;
+
+}
+span{
+    color: #096A67;
+    font-weight: bolder;
+
+}
+.myImg{
+    width: 250px;
+    height:  160px;
+    margin-left: 130px;
+    margin-top: 85px;
+
+}

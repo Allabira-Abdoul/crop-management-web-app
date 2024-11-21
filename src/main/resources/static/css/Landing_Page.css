@@ -1,0 +1,161 @@
+body {
+    width: 98.8%;
+    height: 1340px;
+    display: flex;
+    flex-direction: column;
+    background-color: #009ECA;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navBar {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    width: 99.7%;
+    height: 90px;
+    padding-left: 5px;
+    align-items: center;
+    border-radius: 10px 10px 0 10px;
+    background-color: #F5F5F5;
+    margin-bottom: -5px;
+}
+
+.navBar .link {
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navBar .link:hover,
+.link:active {
+    color: #67A952;
+    height: fit-content;
+    text-decoration-line: overline;
+    font-size: 19px;
+    border-radius: 12px;
+    transition: 0.5s;
+}
+
+.SignInButton {
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-right: 15px;
+    background-color: #67A952;
+    color: white;
+    height: 40px;
+    width: 160px;
+    border: none;
+    text-align: center;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.63);
+    cursor: pointer;
+}
+
+.middleBox {
+    display: flex;
+}
+
+.Right-div {
+    width: 58.34%;
+    height: 992px;
+}
+
+.Left-div {
+    width: 39.58%;
+    height: 992px;
+    padding-left: 40px;
+}
+
+.Left-div .Icon {
+    width: 455px;
+    font-size: 50px;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    text-align: center;
+    font-size: larger;
+}
+.info button{
+    text-decoration: none;
+    width: 330px;
+    height: 52px;
+    background-color: #FF0006;
+    margin-bottom: 100px;
+    color: #f1f1f1;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: none;
+    box-shadow: 1px 1px 5px 0 rgba(0, 0, 0, 0.63);
+    transition: 0.8s;
+}
+.info button a{
+    text-decoration: none;
+    color: white;
+}
+
+.info button:hover,.SignInButton:hover {
+    background-color: #f0e445;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.329);
+    translate: 3px;
+    transition: 1s;
+}
+
+.footer {
+    display: flex;
+    background:linear-gradient(
+        to right,
+   black 0%,
+   black 70%,
+    white 70%
+    );
+    color: #f1f1f1;
+    width: 93.25%;
+    padding: 50px;
+    padding-top: 10px;
+    justify-items: center;
+    justify-content: space-between;
+    text-align: center;
+    overflow: hidden;
+    height: 248px;
+}
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+
+.content {
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+
+.div9 {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+}
+.div9 a{
+display: flex;
+margin: -7px;
+align-self: flex-start;
+}
+.div9 img{
+    margin-right: 10px;
+}
+.div10 {
+    height: 150px;
+    border-radius: 20px;
+    background-size: cover;
+    background-image: url(../IMG/Capture\ d\'écran\ 2024-02-17\ 135058.png);
+}
